@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js">
+        //how to check output
+
+        /*
+        alert("jishad");
+        document.write("jishad");
+        console.log("jishad");
+         */
+
+        //how to declare variable
+
+       /*
+        var name ="Jishad";
+        document.write(name);
+       */
+
+       //num ke string e convert
+       /*
+       var num=20;
+       num= toString(num);
+       console.log(typeof(num));
+       */
+
+       //string ke int e convert
+       /*
+        var num="20";
+        num= parseInt(num);
+        console.log(typeof(num));
+       */
+      
+       //number method er kaj hocce kono ekta data type ke int e convert kora
+       /*
+       console.log(Number("12"));
+       */
+
+       //string concate
+       /*
+       var firstName="jahidul";
+       var lastName="jishad";
+       document.write(firstName+" islam "+lastName);
+       */
+
+       //libraray function of string
+       /*
+       var name="jishad";
+       document.write(name.length);
+       same babe CharAt(2),toUpperCase();,
+       */
+
+       //user theke input ni te parbo
+       /*
+       var num=prompt("enter a name :");
+       document.write(num.length)
+       */
+       /*
+       var name = "jishad";
+       var name2 = "jisgggd";
+       document.write(name.concat(name2));
+       */
+
+       //simple calulator
+       /*
+        var num1 = parseInt(prompt("Enter first number : "));   //parseInt disi bcz prompt string ney
+        var num2 = parseInt(prompt("Enter second number : "));
+        var lineBreak = "<br/>";
+
+        var result = num1 + num2;
+        document.write("The sum is : " + result + lineBreak);
+
+        result = num1 - num2;
+        document.write("The sub is : " + result + lineBreak);
+
+        result = num1 * num2;
+        document.write("The multiplication is : " + result + lineBreak);
+
+        result = num1 / num2;
+        document.write("The division is : " + result + lineBreak);
+
+        result = num1 % num2;
+        document.write("The remainder is : " + result + lineBreak);
+        */
+
+        //area calculate
+        /*    
+        var base = parseFloat(prompt("Enter Base = "));
+        var height = parseFloat(prompt("Enter Height = "));
+        var area = 0.5 * base * height;
+        document.write("Area of triangle = " + area);
+        */
+
+        //Temperature converter program
+        /*
+        var farn = parseFloat(prompt("Enter Fahrenheit = "));
+        var cels = (farn - 32) * (5 / 9);
+        document.write("Celsius = " + cels + "<br/>");
+        */
+       /*
+       var num=10;
+       var num2=20;
+       document.write(num>num1);
+       */
+
+       // A program that will find a letter is vowel or consonant
+       /*
+        var letter = prompt("Enter a letter : ");
+        letter = letter.toLowerCase();
+        if (
+            letter == "a" ||
+            letter == "e" ||
+            letter == "i" ||
+            letter == "o" ||
+            letter == "u"
+        ) {
+            console.log("Vowel");
+        } else {
+            console.log("Consonant");
+        }
+        */
+
+        // A program to understand switch -> digit spelling program
+        /*
+            var digit = parseInt(prompt("Enter a digit : "));
+            switch (digit) { //swith er modde value ta pass ko re dibo
+                case 0:
+
+                    document.write("Zero");
+                    break;
+
+                case 1:
+                    document.write("One");
+                    break;
+
+                case 2:
+                    document.write("Two");
+                    break;
+
+                case 3:
+                    document.write("Three");
+                    break;
+
+                case 4:
+                    document.write("Four");
+                    break;
+
+                case 5:
+                    document.write("Five");
+                    break;
+
+                case 6:
+                    document.write("Six");
+                    break;
+
+                case 7:
+                    document.write("Seven");
+                    break;
+
+                case 8:
+                    document.write("Eight");
+                    break;
+
+                case 9:
+                    document.write("Nine");
+                    break;
+
+                default:
+                    document.write("Not a digit");
+            }
+        */
+
+        //A program to demonstrate for loop
+        /*
+            for (var i = 1; i <= 10; i++) {
+                document.write("Bangladesh" + "<br>");
+            }
+            document.write("End of for loop");
+
+            // sum of numbers 1+2+..+100
+            var sum = 0;
+            for (var x = 1; x <= 100; x++) {
+                sum = sum + x;
+            }
+            document.write("The sum is " + sum);
+        */  
+       
+        //A program to demonstrate while loop
+        /*
+            var i = 1;
+            while (i <= 10) {
+                document.write("Bangladesh" + "<br>");
+                i++;
+            }
+            document.write("End of for loop");
+
+            // sum of numbers 1+2+..+100
+            var sum = 0;
+            var x = 1;
+            while (x <= 100) {
+                sum = sum + x;
+                x++;
+            }
+            document.write(sum);
+        */
+
+        // A program to demonstrate do while loop
+        /*
+            var i = 1;
+            do {
+                document.write("Bangladesh" + "<br>");
+                i++;
+            } while (i <= 10);
+
+            document.write("End of do while loop");
+
+            // sum of numbers 1+2+..+100
+            var sum = 0;
+            var x = 1;
+            do {
+                sum = sum + x;
+                x++;
+            } while (x <= 100);
+            document.write(sum);
+        */
+        
+        // break and continue keyword program
+        /*
+            // The break statement "jumps out" of a loop or switch.
+            for (var i = 1; i <= 100; i++) {
+                if (i == 20)
+                    break;
+                document.write(i + "<br/>");
+                if (i == 20) break;
+                document.write(i + "<br/>");
+            }
+
+            // The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+            for (var i = 1; i <= 100; i++) {
+                if (i == 20)
+                    continue; //jeita match hobe oi ta print korbe nah mani loop e bypass ko re di be
+                document.write(i + "<br/>");
+            }
+        */    
+
+        //creating a function
+        /*
+        function squre(num1,num2){
+             var result=num1*num2;
+             document.write(result);
+        }
+
+        squre(5,6);
+        squre(4, 6);
+        */
+        /*
+         function squre(num1, num2)
+            {
+                var result = num1 * num2;
+                return result;
+            }
+            var x=squre(5,6);
+            document.write(x);
+        */   
+       
+        // IIFEs (Immediately Invokeable Function Expressions)
+        /*
+            (function display(message) {
+             console.log(message);   
+            })('hi');  //immediatly call hocce
+        */   
+        /*
+            // Function Expressions
+            var display2 = function displayMessage(msg) {
+                console.log(msg);    //ekta function ke var er modde reke dicchi ei ta hocce fX
+            };
+            display2("I am message");
+        */
+        
+        
+
+
+    </script>
+
+
+</body>
+</html>
